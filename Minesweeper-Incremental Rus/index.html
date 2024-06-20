@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<HTML>
+
+<HEAD>
+	<TITLE>Minesweeper</TITLE>
+	<LINK rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+</HEAD>
+
+<BODY>
+	<div id="container" width="window.innerWidth" height="window.innerHeight">
+	
+		<div id="mv_bckgrnd"></div>
+		<button class="mv" id="mv_menu_mf">Поле</button>
+		<button class="mv" id="mv_menu_tsk">Задачи</button>
+		<button class="mv" id="mv_menu_bb">Большой взрыв</button>
+		<button class="mv" id="mv_menu_sett">Настройки</button>
+		
+		<button class="wrn" id="wrn_tsk">!</button>
+		
+		<div id="info_bckgrnd"></div>
+		<div class="info" id="info_coins">Монеты: ?</div>
+		<div class="info" id="info_rage">Ярость: ?</div>
+		<div class="info" id="info_shards">Осколки: ?</div>
+		
+		<div class="menu" id="menu_mf">
+			<div id="field"></div>
+			<div class="loc_name" id="name_mf">Поле</div>
+			<button class="bt" id="bt_get_coins">Получить ? монет</button>
+			<button class="bt" id="bt_restart">Перезапуск</button>
+			<button class="bt" id="bt_big_bang"></button>
+			
+			<p id="restart_penalty">Штраф от перезапуска: 30% от ваших монет</p>
+			
+			<div id="upg_window"></div>
+		</div>
+		
+		<div class="menu" id="menu_bb">
+		
+			<div id="bb_loc_upgrades">
+				<div class="loc_name" id="name_bb">Улучшения Большого взрыва</div>
+				<div id="bb_upg_container">
+					<div class="bb_upg_bt" id="bt_bb_upg_power">Сила</div>
+					<div class="bb_upg_bt" id="bt_bb_upg_comfort">Комфорт</div>
+					<div class="bb_upg_bt" id="bt_bb_upg_automation">Автоматизация</div>
+					<div id="bb_upg_window">
+						<div id="bb_upg_desc"></div>
+						<button class="bb_upg_desc_bt" id="bb_upg_close">X</button>
+						<button class="bb_upg_desc_bt" id="bb_upg_buy">+</button>
+					</div>
+				</div>
+			</div>
+			
+			<div id="bb_loc_stages">
+			</div>
+			
+		</div>
+		
+		<div class='menu' id='menu_tsk'>
+			<div class='tsk' id='tsk_name'></div>
+			<div class='tsk' id='tsk_desc'>
+				<p class='tsk' id='tsk_desc_p'></p>
+			</div>
+			<div class='tsk' id='tsk_rec'></div>
+			<div class='tsk' id='tsk_req'></div>
+			<div class='tsk' id='tsk_rwrd'></div>
+			<div class='tsk' id='tsk_bt_comp'><b>ЗАВЕРШИТЬ</b></div>
+		</div>
+		
+		<div class="menu" id="menu_sett">
+			<div class="bt_sett" id="bt_hard_reset">ПОЛНЫЙ СБРОС</div>
+			<div class="bt_sett" id="bt_sett_click"></div>
+		</div>
+		
+	</div>
+</BODY>
+</HTML>
+
+<script src="Main/stats.js"></script>
+<script src="Main/math.js"></script>
+<script src="Main/automation.js"></script>
+<script src="Other/generate.js"></script>
+<script src="Other/progress.js"></script>
+<script src="Other/version.js"></script>
+<script src="Locations/ms.js"></script>
+<script src="Locations/tasks.js"></script>
+<script src="Locations/big_bang.js"></script>
+<script src="Locations/settings.js"></script>
+<script src="Other/interface.js"></script>
