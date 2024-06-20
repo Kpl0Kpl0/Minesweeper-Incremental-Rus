@@ -1,0 +1,534 @@
+* {
+	user-select: none;
+	overflow:hidden;
+}
+
+html, body {
+	margin: 0;
+	background-color:#1C1C1C;
+}
+
+#container {
+	position:absolute;
+	/*background-color:#A9A9A9;
+	border:2px solid #FF0000;*/
+	width:100vw;
+	height:100vh;
+}
+
+/*-----------------------------------*/
+/*---------- Field elements ---------*/
+/*-----------------------------------*/
+
+#field {
+	position:absolute;
+	width:30.2vw;
+	height:56.2vh;
+	top:8vh;
+	left:40vw;
+	/*background-color:#228B22;*/
+	margin-left:-5vw;
+}
+
+/*-----------------------------------*/
+/*--------- Main BB elements --------*/
+/*-----------------------------------*/
+
+#bb_upg_container {
+	position:absolute;
+	width:60vw;
+	height:75vh;
+	top:9vh;
+	left:25vw;
+	background-color:#161762;
+	border:4px solid #0F104B;
+	margin-left:-5vw;
+}
+
+#bb_upg_window {
+	position:absolute;
+	width:60vw;
+	height:67vh;
+}
+
+/*-----------------------------------*/
+/*---------- Menu elements ----------*/
+/*-----------------------------------*/
+
+.menu {
+	width:inherit;
+	height:inherit;
+	display:none;
+	position:absolute;
+	margin:0;
+}
+#menu_mf {
+	display:block;
+	background-color:#292929;
+	/*A9A9A9*/
+}
+#menu_tsk {
+	background-color:#27270D;
+}
+#menu_bb {
+	background-color:#101130;
+	/*3D3FB7*/
+}
+#menu_sett {
+	background-color:#535353;
+}
+
+/*-----------------------------------*/
+/*--------- Button elements ---------*/
+/*-----------------------------------*/
+
+.bt {
+	position:absolute;
+	text-align:center;
+	font-size:calc(0.24vw + 2.2vh);
+	font-family: Arial, Helvetica, sans-serif;
+	width:18vw;
+	height:6vh;
+}
+#bt_get_coins {
+	top:66vh;
+	left:41vw;
+}
+#bt_restart {
+	top:74vh;
+	left:41vw;
+}
+#bt_big_bang {
+	top:85vh;
+	left:41vw;
+	height:12vh;
+	font-size:calc(0.5vw + 1.6vh);
+	display:none;
+}
+
+/*-----------------------------------*/
+/*---------- Coins penalty ----------*/
+/*-----------------------------------*/
+
+#restart_penalty {
+	position:absolute;
+	
+	top:78.5vh;
+	left:38vw;
+	
+	width:24vw;
+	height:4.4vh;
+	
+	color:#C8143C;
+	
+	text-align:center;
+	white-space:pre-wrap;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:calc(0.16vw + 1.6vh);
+}
+
+/*-----------------------------------*/
+/*--------- BB move buttons ---------*/
+/*-----------------------------------*/
+
+.bb_upg_bt {
+	position:absolute;
+	text-align:center;
+	line-height:150%;
+	font-size:Calc(1vw + 3vh);
+	color:#121457;
+	background-color:#2F30B4;
+	border:4px solid #0F104B;
+	font-family: Arial, Helvetica, sans-serif;
+	width:20vw;
+	height:7.4vh;
+	top:67vh;
+	left:-0.1vw;
+}
+#bt_bb_upg_comfort {
+	left:20vw;
+}
+#bt_bb_upg_automation {
+	left:40vw;
+}
+
+/*-----------------------------------*/
+/*----- BB description elements -----*/
+/*-----------------------------------*/
+
+#bb_upg_desc {
+	position:absolute;
+	
+	display:block;
+	
+	text-align:center;
+	font-size:Calc(0.6vw + 1.9vh);
+	font-family: Arial, Helvetica, sans-serif;
+	white-space:pre-wrap;
+	line-height:120%;
+	
+	width:50vw;
+	height:22vh;
+	
+	top:41vh;
+	left:5vw;
+	
+	z-index:2;
+	
+	color:#0F104B;
+	background-color:#3233B3;
+	border:2px solid #0F104B;
+}
+.bb_upg_desc_bt {
+	position:absolute;
+	
+	text-align:center;
+	font-size:2.5vw;
+	font-family: Arial, Helvetica, sans-serif;
+	
+	width:3vw;
+	height:5.6vh;
+	
+	left:55.2vw;
+	
+	z-index:3;
+	
+	color:#2A2A2A;
+	background-color:#2F30B4;
+	border:2px solid #0F104B;
+}
+#bb_upg_close {
+	top:41vh;
+	background-color:#AE5B4E;
+}
+#bb_upg_buy {
+	top:46.6vh;
+	background-color:#60C157;
+}
+
+/*-----------------------------------*/
+/*---------- Move elements ----------*/
+/*-----------------------------------*/
+
+.mv {
+	position:absolute;
+	
+	text-align:center;
+	font-size:calc(0.4vw + 3vh);
+	line-height:125%;
+	font-family: Arial, Helvetica, sans-serif;
+	
+	width:16.1vw;
+	height:5.2vh;
+	
+	left:83.7vw;
+	
+	margin:0;
+	margin-top:0.05vw;
+	margin-left:0.05vw;
+	
+	z-index:3;
+	
+	border:0.13vw solid #4E4E4E;
+}
+#mv_menu_mf {
+	color:#7C7C7C;
+	background-color:#CCCCCC;
+}
+#mv_menu_tsk {
+	top:5.2vh;
+	
+	color:#5E660D;
+	background-color:#9EAC14;
+}
+#mv_menu_bb {
+	top:10.4vh;
+	
+	display:none;
+	
+	color:#140A64;
+	background-color:#5343E3;
+}
+#mv_menu_sett {
+	top:10.4vh;
+	
+	color:#565656;
+	background-color:#9A9A9A;
+}
+
+#mv_menu_mf:hover {
+	transition-duration: 0.1s;
+	color: #888888;
+	background-color: #E0E0E0;
+}
+#mv_menu_tsk:hover {
+	transition-duration: 0.1s;
+	color: #67700E;
+	background-color: #ADBD16;
+}
+#mv_menu_bb:hover {
+	transition-duration: 0.1s;
+	color: #160B6E;
+	background-color: #5B49F9;
+}
+#mv_menu_sett:hover {
+	transition-duration: 0.1s;
+	color: #5F5F5F;
+	background-color: #A9A9A9;
+}
+
+#mv_bckgrnd {
+	position:absolute;
+	width:16vw;
+	height:99.2vh;
+	z-index:2;
+	left:83.6vw;
+	background-color:#1C1C1C;
+	border:4px solid #4E4E4E;
+}
+
+/*-----------------------------------*/
+/*---------- Info elements ----------*/
+/*-----------------------------------*/
+
+.info {
+	position:absolute;
+	
+	text-align:left;
+	line-height:200%;
+	text-indent:0.2vw;
+	font-size:calc(0.2vw + 2.2vh);
+	font-family: Arial, Helvetica, sans-serif;
+	
+	width:16vw;
+	height:5.2vh;
+	
+	left:0.1vw;
+	
+	display:none;
+	
+	margin:0;
+	margin-top:0.05vw;
+	margin-left:0.05vw;
+	
+	z-index:3;
+	
+	border:0.13vw solid #4E4E4E;
+}
+#info_coins {
+	color:#FFFF00;
+	background-color:#8C8C00; /* Дели на 60 цвет из color */
+}
+#info_rage {
+	top:5.4vh;
+	
+	color:#E04C0F;
+	background-color:#7B2A08;
+}
+#info_shards {
+	top:10.8vh;
+	
+	color:#5845FE;
+	background-color:#30268C;
+}
+#info_bckgrnd {
+	position:absolute;
+	width:16vw;
+	height:99.2vh;
+	z-index:2;
+	background-color:#1C1C1C;
+	border:4px solid #4E4E4E;
+}
+
+/*-----------------------------------*/
+/*-------- Location elements --------*/
+/*-----------------------------------*/
+
+.loc_name {
+	position:absolute;
+	
+	text-align:center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:calc(1vw + 4.6vh);
+	line-height:calc(1.4vw + 5.4vh);
+	
+	width:40vw;
+	height:8vh;
+	
+	top:0vh;
+	left:30vw;
+}
+#name_mf {
+	color:#959595;
+}
+#name_bb {
+	color:#2917B9;
+	font-size:calc(0.9vw + 3.6vh);
+	line-height:calc(1.6vw + 5.8vh);
+}
+
+.bt_sett {
+	position:absolute;
+	text-align:center;
+	font-size:2vw;
+	line-height:3.2vw;
+	font-family: Arial, Helvetica, sans-serif;
+	width:18vw;
+	height:3vw;
+}
+#bt_hard_reset {
+	top:6vw;
+	left:41vw;
+	z-index:3;
+	background-color:#9C1E1E;
+}
+#bt_sett_click {
+	top:12vw;
+	left:41vw;
+	height:5vw;
+	font-size:1.8vw;
+	line-height:2.4vw;
+	z-index:3;
+	background-color:#6F6F6F;
+	border:0.2vw solid #5F5F5F;
+}
+
+.tsk {
+	position:absolute;
+	
+	text-align:left;
+	line-height:2.2vw;
+	text-indent:2vw;
+	font-family: Arial, Helvetica, sans-serif;
+	
+	color:#7B752D;
+	background-color:#3F3F16;
+	border:0.2vw solid #353513;
+	
+	z-index:3;
+}
+#tsk_name {
+	width:50vw;
+	height:5.8vh;
+	
+	top:4vh;
+	left:25vw;
+	
+	font-size:calc(0.6vw + 3.8vh);
+	text-indent:0vw;
+	line-height:3vw;
+	text-align:center;
+	
+	background-color:transparent;
+	border:0;
+}
+#tsk_desc {
+	width:60vw;
+	height:44.8vh;
+	
+	top:10.6vh;
+	left:20vw;
+	
+	font-size:calc(0.6vw + 2.4vh);
+}
+#tsk_desc_p {
+	margin:1vw;
+	
+	font-size:calc(0.6vw + 2.4vh);
+	line-height:2.28vw;
+	text-indent:0vw;
+	
+	white-space:pre-wrap;
+	
+	border:0vw;
+}
+#tsk_rec {
+	width:54vw;
+	height:12vh;
+	
+	top:55.8vh;
+	left:23vw;
+	
+	font-size:calc(0.4vw + 2.2vh);
+	text-indent:0.5vw;
+	line-height:2vw;
+}
+#tsk_req {
+	width:48vw;
+	height:6vh;
+	
+	top:68.2vh;
+	left:26vw;
+	
+	font-size:calc(0.6vw + 2.6vh);
+	text-indent:0.5vw;
+	line-height:3vw;
+}
+#tsk_rwrd {
+	width:42vw;
+	height:6vh;
+	
+	top:74.6vh;
+	left:29vw;
+	
+	font-size:calc(0.6vw + 2.6vh);
+	text-indent:0.5vw;
+	line-height:3vw;
+}
+#tsk_bt_comp {
+	width:30vw;
+	height:6vh;
+	
+	top:84vh;
+	left:35vw;
+	
+	display:none;
+	
+	font-size:calc(0.6vw + 3.8vh);
+	text-indent:0.5vw;
+	line-height:calc(1.4vw + 3.4vh);
+	text-align:center;
+	
+	color:#387B2D;
+	background-color:#173F16;
+	border:0.2vw solid #133513;
+}
+
+.wrn {
+	position:absolute;
+	
+	width:1.6vw;
+	height:5.2vh;
+	
+	text-align:left;
+	line-height:2vw;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:calc(0.4vw + 4vh);
+	
+	color:#FF0000;
+	background-color:transparent;
+	border:0;
+	
+	z-index:4;
+}
+#wrn_tsk {
+	top:5.2vh;
+	left:97.7vw;
+}
+
+.open_tile {
+  -webkit-animation-name: anim_open_tile;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes anim_open_tile {
+  from {
+    -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(100px);
+  }
+  to {
+    -webkit-transform: rotate(0deg) scale(2) skew(0deg) translate(100px);
+  }
+}
